@@ -1,0 +1,12 @@
+# How to write a good technical report
+
+## Topiccs are easy
+
+1. Abstract/Summary
+1. Pain
+1. Attempted solutions
+1. Promise
+1. Work
+1. Results
+1. Well...?
+1. Now what?
