@@ -10,15 +10,18 @@
 \contentsline {section}{\numberline {2.2}Background}{12}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Project}{12}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Rocket Cryogenic Storage}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}This isn't rocket science\ldots {}}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}\ldots it's rocket engineering}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Project}{15}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Constraints and requirements}{16}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Resources}{16}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Heat Transfer}{16}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Home Energy Audit}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Stirling Engine}{19}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Waste-to-Energy}{21}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Waste Heat Recovery}{23}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Writing a \textbf {\emph {Great}} Technical Report}{25}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Pain, peril, promise}{25}{section.8.1}%
+\contentsline {section}{\numberline {3.1}Project}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Possible Inputs}{16}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Outputs}{16}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Constraints, Requirements, Complications}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Bonus}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Resources}{17}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Home Energy Audit}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Twenty-one questions}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Energy Guides and Audits}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The Project: Home Energy Audit}{20}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Stirling Engine}{21}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Waste-to-Energy}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Waste Heat Recovery}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Writing a \textbf {\emph {Great}} Technical Report}{27}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Pain, peril, promise}{27}{section.8.1}%

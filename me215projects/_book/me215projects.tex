@@ -41,6 +41,46 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -86,7 +126,7 @@
 \makeatother
 \subtitle{Semester Projects}
 \author{marcus ashford, phd}
-\date{2020-10-16}
+\date{2020-10-19}
 
 \begin{document}
 \maketitle
@@ -98,6 +138,8 @@
 \hypertarget{preface}{%
 \chapter*{Preface}\label{preface}}
 \addcontentsline{toc}{chapter}{Preface}
+
+Fall 2020 projects are described inside.
 
 \hypertarget{stadium-roof}{%
 \chapter{Stadium Roof}\label{stadium-roof}}
@@ -228,16 +270,23 @@ Other methods abound, but I'm less familiar with how they work. You're free to p
 \hypertarget{rocket-cryogenic-storage}{%
 \chapter{Rocket Cryogenic Storage}\label{rocket-cryogenic-storage}}
 
-\emph{under construction}
-
 Storing Cryogenic liquids is a challenging endeavor.
 Cryogenic liquids have boiling points that are far below ambient temperature.
 When storing them, a major challenge is reducing boil-off.
-The cryogen is under saturation conditions.
-Any heat transfer into the tank causes some of the cryogen to boil away, a serious concern for applications that requires liquid cryogen (as opposed to very cold gas).
+The cryogen is under saturation conditions, so any heat transfer into the tank increases the vapor fraction of the cryogen. This is a serious concern for applications that require liquid cryogen (as opposed to very cold gas).
 
-Consider a rocket fueled by liquid methane (LMG), with liquid oxygen (LOX) oxidizer.
-You are charged with designing the fuel system.
+\begin{figure}
+
+{\centering \includegraphics[width=0.25\linewidth]{./figures/rocket-fuel} 
+
+}
+
+\caption{Simple depiction of a rocket fuel system}\label{fig:rocket-fuel}
+\end{figure}
+
+If the cryogen is stored in a rigid tank, pressure increases until the tank eventually ruptures. A mechanically robust tank is an option, but a tank robust enough to survive the pressure increase would be extremely heavy. Normally, cryogenic stoorage tanks (dewars) are vented, but that means lost cryogen.
+
+You are charged with designing the fuel system for a rocket fueled by liquid methane (LMG), with liquid oxygen (LOX) oxidizer.
 We've already determined how much fuel and oxidizer are required to complete the mission. Your major concern is the loss of LMG and LOX while the rocket sits on the pad. You will be launching from the New Mexico desert in mid-June, and the rocket may sit on the pad for up to 2 hours after fueling.
 Because you're so good at thermodynamics, you know you have several options at your disposal:
 
@@ -249,62 +298,136 @@ Because you're so good at thermodynamics, you know you have several options at y
 \item
   Insulate the tanks.
 \item
-  Load extra cryogens.
+  Load extra cryogens and vent the excess.
+\item
+  Other clever ideas I didn't realize.
 \end{enumerate}
-
-\hypertarget{this-isnt-rocket-science}{%
-\section{This isn't rocket science\ldots{}}\label{this-isnt-rocket-science}}
-
-\hypertarget{its-rocket-engineering}{%
-\section{\ldots it's rocket engineering}\label{its-rocket-engineering}}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.25\linewidth]{./figures/rocket-fuel} 
-
-}
-
-\caption{Simple depiction of a rocket fuel system}\label{fig:rocket-fuel}
-\end{figure}
 
 \hypertarget{project}{%
 \section{Project}\label{project}}
+
+Develop a calculator that will compute optimum tank dimensions given user-defined constraints and requirements.
+
+\hypertarget{possible-inputs}{%
+\subsection{Possible Inputs}\label{possible-inputs}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Size both tanks.
+  Required liftoff masses of both fuel and oxidizer, or either fuel or oxidizer.
 \item
-  Specify the initial masses of LOX and LMG to be loaded into each tank. This is the amount before any boiloff begins.
+  Maximum diameter, length, volume, or mass of each tank.
+\item
+  Oother parameters you find important.
+\end{enumerate}
+
+\hypertarget{outputs}{%
+\subsection{Outputs}\label{outputs}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Dimensions of both tanks.
+\item
+  Specify initial masses of LOX and LMG to be loaded into each tank. This is the amount before any boiloff begins.
 \item
   Specify operating pressure of each tank.
 \item
-  Specify the insulation and its thickness.
+  Specify the insulation type and its thickness.
+\item
+  Alert user if they have specified a set of requirements than cannot be met.
 \end{enumerate}
 
-\hypertarget{constraints-and-requirements}{%
-\section{Constraints and requirements}\label{constraints-and-requirements}}
+\hypertarget{constraints-requirements-complications}{%
+\section{Constraints, Requirements, Complications}\label{constraints-requirements-complications}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
   It's a rocket. Low weight is holy and just.
+\item
+  Consider the wisdom of venting a lot of fuel and oxidizer in the same genral area.
+\item
+  Heat transfer
 \end{enumerate}
+
+\hypertarget{bonus}{%
+\section{Bonus}\label{bonus}}
+
+Account for the mechanical strength of the tank material in your calculations.
 
 \hypertarget{resources}{%
 \section{Resources}\label{resources}}
 
-You may need property data beyond what is in your textbook. Feel free to use other texts, ASHRAE Handbooks, etc. Mathematica has a very nice thermodynamic properties function. The NIST \citep{linstrom_nist_2019} Chemistry WebBook may be a good option. Find it at \url{webbook.nist.gov}.
-
-\hypertarget{heat-transfer}{%
-\section{Heat Transfer}\label{heat-transfer}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  You will need property data beyond what is in your textbook. Feel free to use other texts, ASHRAE Handbooks, NASA \citep{mcbride_nasa_2002}, \citep{noauthor_nasa_nodate} and DOD \citep{noauthor_defense_nodate} libraries, etc. Mathematica (UA has a site license) has a very nice thermodynamic properties function. The NIST \citep{linstrom_nist_2019} Chemistry WebBook may be a good option. Find it at \url{webbook.nist.gov}. CoolProp \citep{bell_pure_2014} is a popular open-source thermodynamic property calculator that works with platforms like Python, Julia, Python, Excel, MATLAB, Maple, and at least a dozen others.
+\item
+  Heat transfer into a liquid is aalways higher than heat transfer to a vapor. Boiling liquids provide some of the highest heat transfer rates possible. I can point you to dozens of great sources for information about the heat transfer of fluids changing phase.
+\end{enumerate}
 
 \hypertarget{home-energy-audit}{%
 \chapter{Home Energy Audit}\label{home-energy-audit}}
 
-\emph{under coonstruction}
+As energy conservation efforts have intensified among the Transportation, Industrial, and Business sectors, the Residential sector has emerged as an increasingly important opportunity to reduce our energy footprint. HVAC (heating, ventilation, and air conditioning), water heaters, and clothes dryers require enormous amounts of energy. Energy traipses through doors and windows as if it carries a perpetual red carpet invitation.
+
+\hypertarget{twenty-one-questions}{%
+\section{Twenty-one questions}\label{twenty-one-questions}}
+
+During winter, do you stay away from windows because it's cold over there? Does it seem like the cold is tumbling into your room near the windows? Do your windows ever fog up or collect condensation during the summer? Do you know anyone that has performed a home energy audit? Have you? Without looking, what information appears on an \href{https://www.snopud.com/site/content/images/ee/eguidelabel.jpg}{Energy Star EnergyGuide label?} label? Would you allow your power utility to cycle your HVAC system on/off during periods ono peak power usage in exchange for discount pricing?
+
+\hypertarget{energy-guides-and-audits}{%
+\section{Energy Guides and Audits}\label{energy-guides-and-audits}}
+
+Energy savings guides are everywhere. They are published by government energy agencies, environmental interest groups, utilities, home builders and appliance companies, and organizations that perform professional energy audits, of course.
+
+\begin{quote}
+``\ldots the only things on the 'net more prevalent
+that energy guides are cat videos\ldots{}''
+
+\hfill --- marcucius, ca 2020
+\end{quote}
+
+Here are some examples of guides and labels from around the world: Canada (\href{https://www.nrcan.gc.ca/energy-efficiency/energy-efficiency-homes/make-your-home-more-energy-efficient/20550}{guide}, \href{https://www.nrcan.gc.ca/energy-efficiency/energy-efficiency-products/product-information/windows-doors-skylights/sample-labels-windows-doors-and-skylights/13958}{labels}),
+\href{https://www.clp.com.hk/en/my-home-site/energy-saving-ideas-site/understanding-energy-labels-site/PublishingImages/logo_EnergyLabel_detail.jpg}{Hong Kong}, \href{https://ec.europa.eu/info/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/energy-label-and-ecodesign/about_en}{European Union}, \href{figures/barbadoslabel.png}{Barbados}, and an infographic from the \href{https://www.energy.gov/sites/prod/files/styles/borealis_article_hero_respondxl2/public/energysaver2017_HomeEnergyAudits.png?itok=JTSoNyts}{US Department of Energy}
+
+\hypertarget{the-project-home-energy-audit}{%
+\section{The Project: Home Energy Audit}\label{the-project-home-energy-audit}}
+
+Home energy audits tend to come in only two flavors: professional-caliber audits that require specialized instrumentation and consumer-grade versions that have lots of pretty graphics (perhaps your bias meter just started beeping wildly). Let's be clear: they get the job done, but pass little of the underlying science to the user. Moreover, they have little appeal to people that aren't already wanting to perform an energy audit.
+
+Your mission is to create a more balanced home energy audit.
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+
+\NormalTok{notes}
+\NormalTok{======}
+
+\NormalTok{{-} has thermo}
+\NormalTok{{-} dual emphasis on cost and environment}
+\NormalTok{{-} for parent and child, perhaps distributed as class project}
+\NormalTok{  {-} have child do some plotting for the child. maybe $$ vs temp/season vs other relevant factors}
+\NormalTok{  {-} have some instant activities}
+\NormalTok{    {-} reading meters with appliances on/off, etc}
+\NormalTok{    {-} ht trans through windows/door}
+\NormalTok{  {-} kid makes conclusions, maybe predicts savings}
+\NormalTok{{-} has thermo}
+\NormalTok{  {-} CLARIFY, not SIMPLIFY. use natgeo example}
+\NormalTok{  {-} maybe a kit with inexpensive sensors, or uses one of those temperature/hygromters that goes in reptile aquarium}
+
+\NormalTok{{-} output}
+\NormalTok{  {-} maybe a guide}
+\NormalTok{  {-} maybe an full featured app}
+\NormalTok{  {-} maybe an app that uses a phone/pad/laptop\textquotesingle{}s sensors for time, temp, etc}
+\NormalTok{  {-} you could storyboard an app, and implement the calculations in another environment (preferably not spreadsheet)}
+  
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{stirling-engine}{%
 \chapter{Stirling Engine}\label{stirling-engine}}
