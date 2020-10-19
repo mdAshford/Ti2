@@ -1,0 +1,51 @@
+
+
+# Rocket Cryogenic Storage
+
+_under construction_
+
+Storing Cryogenic liquids is a challenging endeavor.
+Cryogenic liquids have boiling points that are far below ambient temperature. 
+When storing them, a major challenge is reducing boil-off. 
+The cryogen is under saturation conditions. 
+Any heat transfer into the tank causes some of the cryogen to boil away, a serious concern for applications that requires liquid cryogen (as opposed to very cold gas).
+
+Consider a rocket fueled by liquid methane (LMG), with liquid oxygen (LOX) oxidizer. 
+You are charged with designing the fuel system. 
+We’ve already determined how much fuel and oxidizer are required to complete the mission. Your major concern is the loss of LMG and LOX while the rocket sits on the pad. You will be launching from the New Mexico desert in mid-June, and the rocket may sit on the pad for up to 2 hours after fueling. 
+Because you’re so good at thermodynamics, you know you have several options at your disposal:   
+
+1. Increase tank pressure.
+1. Insulate the tanks.
+1. Load extra cryogens. 
+
+
+
+## This isn't rocket science...  
+
+## ...it's rocket engineering  
+
+```{r rocket-fuel, out.width='25%', fig.align='center', fig.cap = "Simple depiction of a rocket fuel system", cache=TRUE, message=FALSE, echo=FALSE}
+knitr::include_graphics("./figures/rocket-fuel.png")
+```
+
+
+## Project   
+
+1. Size both tanks. 
+1. Specify the initial masses of LOX and LMG to be loaded into each tank. This is the amount before any boiloff begins. 
+1. Specify operating pressure of each tank. 
+1. Specify the insulation and its thickness. 
+
+
+## Constraints and requirements  
+
+1. It's a rocket. Low weight is holy and just. 
+
+
+## Resources
+
+You may need property data beyond what is in your textbook. Feel free to use other texts, ASHRAE Handbooks, etc. Mathematica has a very nice thermodynamic properties function. The NIST [@linstrom_nist_2019] Chemistry WebBook may be a good option. Find it at \url{webbook.nist.gov}.
+
+
+## Heat Transfer    
