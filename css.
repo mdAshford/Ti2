@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp "/Users/psydat/.jupyter/custom/custom.css" "/Users/psydat/Library/Mobile Documents/com~apple~CloudDocs/iDocuments/0.course/resources.thermodynamics/YOUcanDoThermodynamics/youCANdoThermodynamics2020plus/.jupyter/custom"
