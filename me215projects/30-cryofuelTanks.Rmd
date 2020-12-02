@@ -29,13 +29,13 @@ Because you’re so good at thermodynamics, you know you have several options at
 
 Develop a calculator that will compute optimum tank dimensions given user-defined constraints and requirements. 
 
-### Possible Inputs
+## Possible Inputs
 
 1. Required liftoff masses of both fuel and oxidizer, or either fuel or oxidizer.
 1. Maximum diameter, length, volume, or mass of each tank.
 1. Oother parameters you find important.
 
-### Outputs
+## Outputs
 
 1. Dimensions of both tanks.
 1. Specify initial masses of LOX and LMG to be loaded into each tank. This is the amount before any boiloff begins. 
