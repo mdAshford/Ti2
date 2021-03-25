@@ -1,6 +1,7 @@
 [deps]
 CoolProp = "e084ae63-2819-5025-826e-f8e611a84251"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
 PlotlyJS = "f0f68f2c-4968-5e81-91da-67840de0976a"
 StatsPlots = "f3b207a7-027a-5e70-b257-86293d7955fd"
 UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
