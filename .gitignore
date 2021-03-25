@@ -7,4 +7,5 @@ _._*
 **/*ipynb_checkpoints/
 .Rproj.user
 custom.sh
-
+Project.toml
+Manifest.toml
