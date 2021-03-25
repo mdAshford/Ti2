@@ -1,0 +1,10 @@
+⋮_*
+.vscode
+!.jupyter
+_._*
+**/.DS_Store
+._*
+**/*ipynb_checkpoints/
+.Rproj.user
+custom.sh
+
