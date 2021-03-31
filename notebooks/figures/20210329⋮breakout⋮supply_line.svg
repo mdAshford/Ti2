@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 786 358" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-9440,-4954)">
+        <g id="supply-line" serif:id="supply line" transform="matrix(0.412049,0,0,0.397475,8569.82,4954.09)">
+            <rect x="2113.33" y="0" width="1905" height="898" style="fill:none;"/>
+            <g transform="matrix(3.51789,0,0,2.51588,-31620.8,-12269.1)">
+                <path d="M9601.77,4966.66L9837.68,4966.66L9837.68,5026.66L9774.03,5026.71C9766.56,5026.71 9760.49,5035.51 9760.49,5046.34L9760.49,5191.04C9760.49,5201.88 9766.56,5210.67 9774.03,5210.67L9937.96,5210.67C9945.44,5210.67 9951.5,5201.88 9951.5,5191.04L9951.5,5046.34C9951.5,5035.51 9945.44,5026.71 9937.96,5026.71L9879.07,5026.66L9879.07,4966.66L10117.1,4966.66" style="fill:none;stroke:rgb(14,0,249);stroke-width:3.35px;"/>
+            </g>
+            <g transform="matrix(2.4269,0,0,2.51588,-20792,-12463.9)">
+                <path d="M9456.14,4982.38L10205,4982.38" style="fill:none;stroke:rgb(14,0,249);stroke-width:4.17px;"/>
+            </g>
+            <g transform="matrix(1.35757,0,0,0.99204,-1102.26,-319.79)">
+                <g transform="matrix(0.941176,0,0,1.41864,2109.36,-1515.46)">
+                    <ellipse cx="1016.25" cy="1510" rx="63.75" ry="60" style="fill:rgb(255,223,217);stroke:rgb(255,38,0);stroke-width:7.67px;"/>
+                </g>
+                <g transform="matrix(1.20892,0,0,1.71502,1815.22,-1486.32)">
+                    <text x="997.508px" y="1271.78px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:110.906px;fill:rgb(255,38,0);">X</text>
+                </g>
+            </g>
+            <g transform="matrix(1.64119,0,0,1.70136,566.045,-1855.43)">
+                <text x="970.946px" y="1192.89px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:36.969px;fill:rgb(255,38,0);">sa<tspan x="1005.09px " y="1192.89px ">t</tspan>ur<tspan x="1052.11px 1070.24px " y="1192.89px 1192.89px ">at</tspan>ed <tspan x="1132.2px 1150.87px " y="1192.89px 1192.89px ">va</tspan>por<tspan x="1223.61px 1232.31px 1261.13px 1279.26px " y="1192.89px 1192.89px 1192.89px 1192.89px "> wat</tspan>er<tspan x="1323.9px " y="1192.89px ">,</tspan> 1 MP<tspan x="1428.6px " y="1192.89px ">a</tspan></text>
+            </g>
+            <g transform="matrix(1.64119,0,0,1.70136,1237.37,-1247.33)">
+                <text x="933px" y="1192.89px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:36.969px;fill:rgb(255,38,0);">2 m</text>
+                <text x="994.312px" y="1192.89px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:36.969px;fill:rgb(255,38,0);">³</text>
+            </g>
+            <g transform="matrix(2.4269,0,0,2.51588,-20798.1,-12463.9)">
+                <g transform="matrix(1,-0,-0,1,9440,4954)">
+                    <path d="M404.343,187.589L393.093,210.089L381.843,187.589L393.093,198.839L404.343,187.589Z" style="fill:rgb(22,125,28);"/>
+                    <path d="M360.617,60.089L360.617,60.089C369.231,60.089 377.491,63.511 383.581,69.601C389.672,75.692 393.093,83.952 393.093,92.565C393.093,126.096 393.093,176.562 393.093,198.839" style="fill:none;stroke:rgb(22,125,28);stroke-width:3.75px;stroke-dasharray:15,7.5,0,0;stroke-dashoffset:7.5;"/>
+                </g>
+            </g>
+            <g transform="matrix(2.4269,0,0,2.51588,-20798.1,-12463.9)">
+                <path d="M9800.62,5104.09L9707.08,5104.09C9696.73,5104.09 9688.34,5112.48 9688.34,5122.83C9688.34,5158.15 9688.34,5234.22 9688.34,5269.46C9688.34,5274.41 9690.3,5279.15 9693.79,5282.64C9697.29,5286.13 9702.03,5288.1 9706.97,5288.1C9757.48,5288.1 9896.59,5288.1 9947.03,5288.1C9957.3,5288.1 9965.62,5279.78 9965.62,5269.51C9965.62,5233.97 9965.62,5156.78 9965.62,5121.87C9965.62,5112.05 9957.66,5104.09 9947.83,5104.09L9860.62,5104.09" style="fill:none;stroke:rgb(14,0,249);stroke-opacity:0.48;stroke-width:20.83px;"/>
+            </g>
+        </g>
+    </g>
+</svg>
